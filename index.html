@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mentor</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Luznery Vera">
+    <link rel="shortcut icon" href="imgs/mentor.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" type="text/css" href="css/w3schools.library.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+    <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif;
+    }
+    
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+    
+    .w3-top li a {
+        color: #fff;
+        background: #000;
+    }
+    
+    .w3-top li a:hover {
+        color: #3BA21F;
+        background-color: #000;
+    }
+    
+    #myimg {
+        width: 140px;
+        height: 135px;
+    }
+    /* Create a Parallax Effect */
+    
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5 {
+        opacity: 0.7;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* First image (Logo. Full height) */
+    
+    .bgimg-1 {
+        background-image: url('imgs/picjumbo.com_HNCK40111.jpg');
+        min-height: 100%;
+    }
+    /* Second image (destinos) */
+    
+    .bgimg-2 {
+        background-image: url('imgs/Pyme_meeting.jpg');
+        min-height: 800px;
+    }
+    /* Third image (Deportes acuaticos) */
+    
+    .bgimg-3 {
+        background-image: url('imgs/141119_em_facebookwork.jpg');
+        min-height: 600px;
+    }
+    /* Fourth image (Contact) */
+    
+    .bgimg-4 {
+        background-image: url('imgs/picjumbo.com_HNCK40111.jpg');
+        min-height: 500px;
+        margin-top: 10px;
+    }
+    /* Fifth image (Contact) */
+    
+    .bgimg-5 {
+        background-image: url('imgs/cup-of-coffee-1280537_19201.jpg');
+        min-height: 500px;
+        margin-top: 10px;
+    }
+    
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+    
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+    
+    .desc {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 15px;
+        padding: 10px;
+    }
+    
+    .logo-u {
+        width: 80px;
+        border: none;
+        margin-right: 10px;
+    }
+    .logo-u2 {
+     width: 170px;
+        border: none;
+        margin-right: 10px;   
+    }
+    .logo-c {
+        width: 120px;
+        border: none;
+        margin-top: 20px;
+    }
+    
+    #logo1 {
+        height: 80px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    #logo2 {
+        height: 80px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    #logo3 {
+        height: 80px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    #logo4 {
+        height: 80px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    #myNavbar {
+        background-color: #fff;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+    }
+    
+    button {
+        background-color: #000;
+        color: white;
+        border-radius: 4px;
+        padding: 7px;
+        border: none;
+    }
+    
+    .myform-control {
+        width: 50%;
+    }
+    
+    .btn-sucess:hover {
+        background-color: #3ED128 !important;
+    }
+    
+    .logo-small {
+        font-size: 50px;
+    }
+    
+    #logo-m {
+        width: 60px;
+    }
+    
+    footer a {
+        color: #fff;
+    }
+    
+    footer a:hover {
+        color: #3BA21F;
+    }
+     footer p {
+        margin-right: 15px;
+        margin-left: 15px;
+     }
+    .glyphicon-chevron-up a:hover {
+        color: #3BA21F !important;
+    }
+    
+    .social-icons li {
+        display: inline-block;
+        margin-right: 40px;
+    }
+    
+    .social-icons a {
+        text-decoration: none;
+    }
+    
+    .social-icons .fa {
+        color: #C0C0C0;
+        width: 40px;
+        line-height: 40px;
+    }
+    
+    .social-icons .fa:hover {
+        text-decoration: none;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    .fa-android:hover {
+        color: #61A516;
+        background-color: #fff;
+    }
+    
+    .fa-apple:hover {
+        color: #aeb5c5;
+        background-color: #fff;
+    }
+    
+    @font-face {
+        font-family: 'glyphicon-chevron-up';
+        src: url('../fonts/glyphicons-halfing-regular.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'glyphicon-education';
+        src: url('../fonts/glyphicons-halfing-regular.ttf') format('truetype');
+    }
+    /********** Small devices only **********/
+    
+    @media screen and (max-width: 768px) {
+        .bg-1 {
+            margin-top: 150px;
+        }
+    
+    /* Turn off parallax scrolling for tablets and mobiles */
+    
+    @media only screen and (max-width: 1024px) {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3,
+        .bgimg-4,
+        .bgimg-5 {
+            background-attachment: scroll;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top" role="listbox">
+        <ul class="w3-navbar" id="myNavbar">
+            <li><a href="index.html" class="w3-padding-large">Home</a></li>
+            <li><a href="#about" class="w3-padding-large">About</a></li>
+            <li><a href="#blog" class="w3-padding-large">Blog</a></li>
+            <li><a href="#contact" class="w3-padding-large">Contact</a></li>
+            <li class="w3-hide-small w3-right">
+                <a href="#" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a>
+            </li>
+        </ul>
+    </div>
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-opacity w3-display-container">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity">MENTOR</span>
+        </div>
+    </div>
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <div class="bg-1">
+            <h3 class="w3-center">ABOUT US</h3>
+            <p class="w3-center"><em>We Love e-learning</em></p>
+            <p>With us you will find the best ideas to enjoy your holidays. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-section">
+                    <p><b>Luznery Vera Founder</b></p>
+                    <br>
+                    <img id="myimg" src="imgs/Neny.png" class="w3-circle" alt="founder">
+                </div>
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-hide-small w3-section">
+                    <p>Welcome to MENTOR. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container" id="blog">
+        <div class="w3-display-middle">
+            <span class="w3-xlarge w3-yellow w3-wide">CONTENT STRATEGY</span>
+            <span class="w3-xlarge w3-deep-purple w3-wide">SPECIALIZATION</span>
+        </div>
+    </div>
+    <!-- Container (Content Strategy Specialization Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+        <div class="col-sm-8 blog-main">
+            <div class="blog-post">
+                <h2 class="blog-post-title"><a href="#">Content Strategy Specialization</a></h2>
+                <p class="blog-post-meta">November 19, 2016 by <a href="https://twitter.com/LuzneryVera" title="Luznery Vera" target="_blank">Luznery Vera</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <h4>Leave a Comment:</h4>
+            <form>
+                <div class="form-group">
+                    <textarea class="myform-control" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+            <br>
+            <br>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+                <h4>About</h4>
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            </div>
+            <div class="Archives"><!--section-->
+                <h3>Archives</h3>
+                <details>
+                    <summary>October 2016</summary>
+                    <dl>
+                        <dt><a href="#social">Social Media Specialization</a></dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>September 2016</summary>
+                    <dl>
+                        <dt><a href="#webdesign">Web Design For Everybody Specialization</a></dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>August 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>July 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>June 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>May 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>April 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>March 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>February 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>January 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>December 2015</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>November 2015</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="sidebar-module">
+                <h4>Elsewhere</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.blog-sidebar -->
+    </div>
+    <!-- /.row -->
+    
+    <!-- /.container -->
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container" id="social">
+        <div class="w3-display-middle">
+            <span class="w3-xlarge w3-yellow w3-wide">SOCIAL MEDIA</span>
+            <span class="w3-xlarge w3-deep-purple w3-wide">SPECIALIZATION</span>
+        </div>
+    </div>
+    <!-- Container (Social Media Specialization Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+        <div class="col-sm-8 blog-main">
+            <div class="blog-post">
+                <h2 class="blog-post-title"><a href="#social_media_specialization">Social Media Specialization</a></h2>
+                <p class="blog-post-meta">October 19, 2016 by <a href="https://twitter.com/LuzneryVera" target="_blank">Luznery Vera</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <h4>Leave a Comment:</h4>
+            <form>
+                <div class="form-group">
+                    <textarea class="myform-control" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+            <br>
+            <br>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+                <h4>About</h4>
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            </div>
+            <div class="Archives">
+                <h3>Archives</h3>
+                <details>
+                    <summary>October 2016</summary>
+                    <dl>
+                        <dt><a href="#social">Social Media Specialization</a></dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>September 2016</summary>
+                    <dl>
+                        <dt><a href="#webdesign">Web Design For Everybody Specialization</a></dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>August 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>July 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>June 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>May 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>April 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>March 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>February 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>January 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>December 2015</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>November 2015</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="sidebar-module">
+                <h4>Elsewhere</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.blog-sidebar -->
+    </div>
+    <!-- /.row -->
+
+    <!-- /.container -->
+    <!-- Fourth Parallax Image with Portfolio Text -->
+    <div class="bgimg-4 w3-display-container" id="webdesign">
+        <div class="w3-display-middle">
+            <span class="w3-xlarge w3-yellow w3-wide">WEB DESIGN FOR EVERYBODY</span>
+            <span class="w3-xlarge w3-deep-purple w3-wide">SPECIALIZATION</span>
+        </div>
+    </div>
+    <!-- Container (Web Design For Everybody Specialization Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+        <div class="col-sm-8 blog-main">
+            <div class="blog-post">
+                <h2 class="blog-post-title"><a href="#">Web Design For Everybody Specialization</a></h2>
+                <p class="blog-post-meta">September 19, 2016 by <a href="https://twitter.com/LuzneryVera" target="_blank">Luznery Vera</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <!-- Container (About Section) -->
+            <div id="intro" class="container-fluid text-center">
+                <div class="row">
+                    <div class="col-sm-8 col-md-8 w3-animate-opacity text">
+                        <h3 class="">Web Design For Everybody Specialization</h3>
+                        <p>5 Courses</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 mytext w3-animate-opacity">
+                        <p>Learn Html5</p>
+                        <a href="https://www.coursera.org/learn/html" target="_blank" title="Learn Html5 Semantics"><img id="logo1" src="imgs/HTML5_Logo_512.PNG" alt="Html5 logo"></a>
+                    </div>
+                    <div class="col-sm-4 mytext w3-animate-opacity">
+                        <p>Learn CSS3</p>
+                        <a href="https://www.coursera.org/learn/introcss" target="_blank" title="Introduction to CSS3"><img id="logo2" src="imgs/class-header-semantics.jpg" alt="CSS3 logo"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 mytext w3-animate-opacity">
+                        <p>Learn JavaScript</p>
+                        <a href="https://www.coursera.org/learn/javascript" target="_blank" title="Interactivity with JavaScript"><img id="logo3" src="imgs/600px-JavaScript-logo.png" alt="JavaScript logo"></a>
+                    </div>
+                    <div class="col-sm-4 mytext w3-animate-opacity">
+                        <p>Learn RWD</p>
+                        <a href="https://www.coursera.org/learn/responsivedesign" target="_blank" title="Advanced Styling with Responsive Design"><img id="logo4" src="imgs/144px-Bootstrap_logo.svg.png" alt="Bootstrap logo"></a>
+                        <!-- End Images -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 mytext w3-animate-opacity">
+                        <p>Capstone Project</p><span class="glyphicon glyphicon-education logo-small" style="color:#000000; margin-right:10px;"></span>
+                        <a href="https://www.coursera.org/specializations/web-design" target="_blank" title="Web Design For Everybody Specialization"><span class="glyphicon glyphicon-lock logo-small" style="color:#FFD31F;"></span></a>
+                    </div>
+                </div>
+            </div>
+            <h4>Leave a Comment:</h4>
+            <form>
+                <div class="form-group">
+                    <textarea class="myform-control" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+            <br>
+            <br>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+                <h4>About</h4>
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            </div>
+            <div class="Archives">
+                <h3>Archives</h3>
+                <details>
+                    <summary>October 2016</summary>
+                    <dl>
+                        <dt><a href="#social">Social Media Specialization</a></dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>September 2016</summary>
+                    <dl>
+                        <dt><a href="#webdesign">Web Design For Everybody Specialization</a></dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>August 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>July 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>June 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>May 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>April 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>March 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>February 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>January 2016</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>December 2015</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="Archives">
+                <details>
+                    <summary>November 2015</summary>
+                    <dl>
+                        <dt>
+                            <a href="#"></a>
+                        </dt>
+                        <dd>content1</dd>
+                    </dl>
+                </details>
+            </div>
+            <div class="sidebar-module">
+                <h4>Elsewhere</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.blog-sidebar -->
+    </div>
+    <!-- /.row -->
+    
+    <!-- /.container -->
+    <!-- Fifth Parallax Image with Portfolio Text -->
+    <div class="bgimg-5 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center">WHERE WE WORK</h3>
+        <p class="w3-center"><em>We'd love your feedback!</em>
+            <img id="logo-m" src="imgs/Mentor.png" alt="Mentor logo"></p>
+        <!-- Container Swing By & Contact -->
+        <div class="w3-half w3-container w3-center w3-animate-opacity" style="height:510px">
+            <div class="w3-padding-64">
+                <h1>Swing By</h1>
+            </div>
+            <div class="w3-padding-64">
+                <p>Swing by for a cup of coffee, or leave me a note:</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Upata, VE</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> mail: mail@mail.com</p>
+            </div>
+        </div>
+        <!-- End Swing -->
+        <div class="w3-half w3-container" style="height:510px">
+            <!-- contact section -->
+            <div class="w3-padding-64 w3-padding-xlarge w3-center">
+                <h1>Contact</h1><span class="glyphicon glyphicon-envelope"></span>
+                <p class="w3-container w3-center w3-animate-opacity">GET IN TOUCH</p>
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-12 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <h4>Leave a Comment:</h4>
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper w3-center">
+        <h3>Download your App here</h3>
+        <ul class="social-icons">
+            <li>
+                <a class="fa fa-android fa-3x" aria-hidden="true" target="_blank" href="#" title="android"></a>
+            </li>
+            <li>
+                <a class="fa fa-apple fa-3x" aria-hidden="true" target="_blank" href="#" title="apple"></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black footer">
+        <a href="index.html" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up" style="font-size: 30px;"></span></a>
+        <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"> w3.css</a> and <a href="http://getbootstrap.com" title="Bootstrap" target="_blank" class="w3-hover-opacity">Bootstrap</a> Learn in Coursera in the Specialization program of <a href="https://www.coursera.org/specializations/web-design" title="Web Design For Everybody Specialization" target="_blank"> Web Design For Everybody Specialization</a> and <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" title="HTML, CSS and JavaScript for Web Developers" target="_blank">HTML, CSS and JavaScript for Web Developers</a>
+            <br> &copy; Copyright 2016<a href="https://twitter.com/LuzneryVera" title="Luznery Vera" target="_blank"> Luznery Vera</a>
+            <br><img class="logo-u" src="imgs/University_of_Michigan_logo.png" alt="University of Michigan Logo"><img class="logo-u2" src="imgs/university_logo_small_vertical_blue.png" alt="Logo"><img class="logo-c" src="imgs/coursera_logo.png" alt="Logo"></p>
+    </footer>
+</body>
+
+</html>
