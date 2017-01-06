@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
     <style>
-    body,
+        body,
     h1,
     h2,
     h3,
@@ -110,11 +110,13 @@
         border: none;
         margin-right: 10px;
     }
+    
     .logo-u2 {
-     width: 170px;
+        width: 170px;
         border: none;
-        margin-right: 10px;   
+        margin-right: 10px;
     }
+    
     .logo-c {
         width: 120px;
         border: none;
@@ -181,10 +183,12 @@
     footer a:hover {
         color: #3BA21F;
     }
-     footer p {
+    
+    footer p {
         margin-right: 15px;
         margin-left: 15px;
-     }
+    }
+    
     .glyphicon-chevron-up a:hover {
         color: #3BA21F !important;
     }
@@ -238,18 +242,19 @@
         .bg-1 {
             margin-top: 150px;
         }
-    
-    /* Turn off parallax scrolling for tablets and mobiles */
-    
-    @media only screen and (max-width: 1024px) {
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3,
-        .bgimg-4,
-        .bgimg-5 {
-            background-attachment: scroll;
+        h3.w3-center {
+            margin-top: 150px;
         }
-    }
+        /* Turn off parallax scrolling for tablets and mobiles */
+        @media only screen and (max-width: 1024px) {
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3,
+            .bgimg-4,
+            .bgimg-5 {
+                background-attachment: scroll;
+            }
+        }
     </style>
 </head>
 
@@ -262,7 +267,7 @@
             <li><a href="#blog" class="w3-padding-large">Blog</a></li>
             <li><a href="#contact" class="w3-padding-large">Contact</a></li>
             <li class="w3-hide-small w3-right">
-                <a href="#" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a>
+                <a href="#" class="w3-padding-large w3-hover-red"><i class="glyphicon glyphicon-search"></i></a>
             </li>
         </ul>
     </div>
@@ -321,7 +326,8 @@
                 <h4>About</h4>
                 <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
             </div>
-            <div class="Archives"><!--section-->
+            <div class="Archives">
+                <!--section-->
                 <h3>Archives</h3>
                 <details>
                     <summary>October 2016</summary>
@@ -458,13 +464,11 @@
                     <li><a href="#">Facebook</a></li>
                 </ol>
             </div>
+            <!-- /.blog-sidebar -->
         </div>
-        <!-- /.blog-sidebar -->
+        <!-- /.row -->
     </div>
-    <!-- /.row -->
-    
     <!-- /.container -->
-
     <!-- Third Parallax Image with Portfolio Text -->
     <div class="bgimg-3 w3-display-container" id="social">
         <div class="w3-display-middle">
@@ -632,11 +636,10 @@
                     <li><a href="#">Facebook</a></li>
                 </ol>
             </div>
+            <!-- /.blog-sidebar -->
         </div>
-        <!-- /.blog-sidebar -->
+        <!-- /.row -->
     </div>
-    <!-- /.row -->
-
     <!-- /.container -->
     <!-- Fourth Parallax Image with Portfolio Text -->
     <div class="bgimg-4 w3-display-container" id="webdesign">
@@ -656,36 +659,49 @@
             <!-- Container (About Section) -->
             <div id="intro" class="container-fluid text-center">
                 <div class="row">
-                    <div class="col-sm-8 col-md-8 w3-animate-opacity text">
+                    <div class="col-sm-8 col-md-8 text">
                         <h3 class="">Web Design For Everybody Specialization</h3>
                         <p>5 Courses</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4 mytext w3-animate-opacity">
+                    <div class="col-sm-4 mytext">
                         <p>Learn Html5</p>
-                        <a href="https://www.coursera.org/learn/html" target="_blank" title="Learn Html5 Semantics"><img id="logo1" src="imgs/HTML5_Logo_512.png" alt="Html5 logo"></a>
+                        <div class="w3-hover-opacity">
+                            <a href="https://www.coursera.org/learn/html" target="_blank" title="Learn Html5 Semantics">
+                                <img id="logo1" src="imgs/HTML5_Logo_512.png" alt="Html5 logo"></a>
+                        </div>
                     </div>
-                    <div class="col-sm-4 mytext w3-animate-opacity">
+                    <div class="col-sm-4 mytext">
                         <p>Learn CSS3</p>
-                        <a href="https://www.coursera.org/learn/introcss" target="_blank" title="Introduction to CSS3"><img id="logo2" src="imgs/class-header-semantics.jpg" alt="CSS3 logo"></a>
+                        <div class="w3-hover-opacity">
+                            <a href="https://www.coursera.org/learn/introcss" target="_blank" title="Introduction to CSS3">
+                                <img id="logo2" src="imgs/class-header-semantics.jpg" alt="CSS3 logo"></a>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4 mytext w3-animate-opacity">
+                    <div class="col-sm-4 mytext">
                         <p>Learn JavaScript</p>
-                        <a href="https://www.coursera.org/learn/javascript" target="_blank" title="Interactivity with JavaScript"><img id="logo3" src="imgs/600px-JavaScript-logo.png" alt="JavaScript logo"></a>
+                        <div class="w3-hover-opacity">
+                            <a href="https://www.coursera.org/learn/javascript" target="_blank" title="Interactivity with JavaScript">
+                                <img id="logo3" src="imgs/600px-JavaScript-logo.png" alt="JavaScript logo"></a>
+                        </div>
                     </div>
-                    <div class="col-sm-4 mytext w3-animate-opacity">
+                    <div class="col-sm-4 mytext">
                         <p>Learn RWD</p>
-                        <a href="https://www.coursera.org/learn/responsivedesign" target="_blank" title="Advanced Styling with Responsive Design"><img id="logo4" src="imgs/144px-Bootstrap_logo.svg.png" alt="Bootstrap logo"></a>
-                        <!-- End Images -->
+                        <div class="w3-hover-opacity">
+                            <a href="https://www.coursera.org/learn/responsivedesign" target="_blank" title="Advanced Styling with Responsive Design">
+                                <img id="logo4" src="imgs/144px-Bootstrap_logo.svg.png" alt="Bootstrap logo"></a>
+                            <!-- End Images -->
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-8 mytext w3-animate-opacity">
+                    <div class="col-sm-8 mytext">
                         <p>Capstone Project</p><span class="glyphicon glyphicon-education logo-small" style="color:#000000; margin-right:10px;"></span>
-                        <a href="https://www.coursera.org/specializations/web-design" target="_blank" title="Web Design For Everybody Specialization"><span class="glyphicon glyphicon-lock logo-small" style="color:#FFD31F;"></span></a>
+                        <div class="w3-hover-opacity"><a href="https://www.coursera.org/specializations/web-design" target="_blank" title="Web Design For Everybody Specialization"><span class="glyphicon glyphicon-lock logo-small" style="color:#FFD31F;"></span></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -841,11 +857,10 @@
                     <li><a href="#">Facebook</a></li>
                 </ol>
             </div>
+            <!-- /.blog-sidebar -->
         </div>
-        <!-- /.blog-sidebar -->
+        <!-- /.row -->
     </div>
-    <!-- /.row -->
-    
     <!-- /.container -->
     <!-- Fifth Parallax Image with Portfolio Text -->
     <div class="bgimg-5 w3-display-container">
@@ -857,7 +872,7 @@
     <div id="contact" class="w3-content w3-container w3-padding-64">
         <h3 class="w3-center">WHERE WE WORK</h3>
         <p class="w3-center"><em>We'd love your feedback!</em>
-            <img id="logo-m" src="imgs/mentor.png" alt="Mentor logo"></p>
+            <img id="logo-m" src="imgs/Mentor.png" alt="Mentor logo"></p>
         <!-- Container Swing By & Contact -->
         <div class="w3-half w3-container w3-center w3-animate-opacity" style="height:510px">
             <div class="w3-padding-64">
@@ -911,9 +926,9 @@
     <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black footer">
         <a href="index.html" title="To Top">
             <span class="glyphicon glyphicon-chevron-up" style="font-size: 30px;"></span></a>
-        <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"> w3.css</a> and <a href="http://getbootstrap.com" title="Bootstrap" target="_blank" class="w3-hover-opacity">Bootstrap</a> Learn in Coursera in the Specialization program of <a href="https://www.coursera.org/specializations/web-design" title="Web Design For Everybody Specialization" target="_blank"> Web Design For Everybody Specialization</a> and <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" title="HTML, CSS and JavaScript for Web Developers" target="_blank">HTML, CSS and JavaScript for Web Developers</a>
+        <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"> w3.css</a> and <a href="http://getbootstrap.com" title="Bootstrap" target="_blank" class="w3-hover-opacity">Bootstrap</a> Learn in Coursera Design and Web Development from Scratch with the Specialization programs<a href="https://www.coursera.org/specializations/web-design" title="Web Design For Everybody Specialization" target="_blank"> Web Design For Everybody Specialization</a> created by <a href="https://umich.edu/" title="University of Michigan" target="_blank">University of Michigan</a> and<a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" title="Learn HTML, CSS and JavaScript for Web Developers" target="_blank"> HTML, CSS and JavaScript for Web Developers</a> It is the fourth course of Specialization program <a href="https://www.coursera.org/specializations/ruby-on-rails" title="Ruby on Rails Web Development" target="_blank">Ruby on Rails Web Development</a> created by <a href="https://www.jhu.edu/" title="Johns Hopkins University" target="_blank">Johns Hopkins University</a>
             <br> &copy; Copyright 2016<a href="https://twitter.com/LuzneryVera" title="Luznery Vera" target="_blank"> Luznery Vera</a>
-            <br><img class="logo-u" src="imgs/University_of_Michigan_logo.png" alt="University of Michigan Logo"><img class="logo-u2" src="imgs/university_logo_small_vertical_blue.png" alt="Logo"><img class="logo-c" src="imgs/coursera_logo.png" alt="Logo"></p>
+            <br><img class="logo-u" src="imgs/University_of_Michigan_logo.png" alt="University of Michigan Logo"><img class="logo-u2" src="imgs/university_logo_small_vertical_blue.png" alt="Johns Hopkins University Logo"><img class="logo-c" src="imgs/coursera_logo.png" alt="Logo"></p>
     </footer>
 </body>
 
